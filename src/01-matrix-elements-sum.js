@@ -12,6 +12,7 @@
  *  [2, 0, 3, 3]
  * ]
  *
+ *
  * The result should be 9
  */
 function getMatrixElementsSum(matrix) {

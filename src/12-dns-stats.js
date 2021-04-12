@@ -4,6 +4,7 @@
  * @param {Array} domains
  * @return {Object}
  *
+ *
  * @example
  * domains = [
  *  'code.yandex.ru',

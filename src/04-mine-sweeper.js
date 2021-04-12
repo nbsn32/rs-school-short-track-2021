@@ -4,6 +4,7 @@
  * in the neighboring cells. Starting off with some arrangement of mines
  * we want to create a Minesweeper game setup.
  *
+ *
  * @param {Array<Array>} matrix
  * @return {Array<Array>}
  *
