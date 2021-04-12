@@ -11,7 +11,7 @@
  *  'yandex.ru'
  * ]
  *
- * The result should be the following:
+ * The sol should be the following:
  * {
  *   '.ru': 3,
  *   '.ru.yandex': 3,
@@ -20,8 +20,24 @@
  * }
  *
  */
-function getDNSStats(/* domains */) {
-  throw new Error('Not implemented');
+function getDNSStats(domains) {
+  const sol = {};
+
+  domains.forEach((adress) => {
+    const lvls = adress.split('.').reverse();
+    let domain = '';
+
+    lvls.forEach((level) => {
+      domain += `.${level}`;
+      if (domain in sol) {
+        sol[domain]++;
+      } else {
+        sol[domain] = 1;
+      }
+    });
+  });
+
+  return sol;
 }
 
 module.exports = getDNSStats;
