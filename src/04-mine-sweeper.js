@@ -22,7 +22,7 @@
  *  [1, 1, 1]
  * ]
  */
-function minesweeper(/matrix) {
+function minesweeper(matrix) {
   const result = [];
 
   for (let i = 0; i < matrix.length; i++) {
