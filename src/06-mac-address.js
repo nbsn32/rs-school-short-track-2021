@@ -20,7 +20,7 @@ function isMAC48Address(n) {
   return splitMAC.every((item) => {
     const dec = parseInt(item, 16);
 
-    return dec >= 0 && dec <=255;
+    return dec >= 0 && dec <= 255;
   });
 }
 
